@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 | 锄大地背唐诗</title>
+<meta name="description" content="《锄大地背唐诗》隐私政策：本游戏完全离线运行，不收集、不上传任何个人信息，全部游戏数据仅保存在您的设备本地。">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2c5234">
+<meta property="og:type" content="website">
+<meta property="og:title" content="隐私政策 | 锄大地背唐诗">
+<meta property="og:description" content="本游戏完全离线运行，不收集、不上传任何个人信息。">
+<style>
+    :root {
+        --bg: #f6f4ee;
+        --panel: #ffffff;
+        --ink: #23282b;
+        --ink-soft: #55606a;
+        --line: #e3ded2;
+        --accent: #2c5234;
+        --accent-soft: #eaf1ea;
+        --gold: #a8843c;
+        --radius: 12px;
+        --shadow: 0 2px 10px rgba(35, 40, 43, 0.06);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --bg: #14181a;
+            --panel: #1c2225;
+            --ink: #e8e6e1;
+            --ink-soft: #a9b1b7;
+            --line: #2c3438;
+            --accent: #8fbf9d;
+            --accent-soft: #202c25;
+            --gold: #d3b273;
+            --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+        margin: 0;
+        padding: 0 18px 56px;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                     "Hiragino Sans GB", "Microsoft YaHei", Roboto, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.78;
+        word-wrap: break-word;
+    }
+
+    .wrap { max-width: 860px; margin: 0 auto; }
+
+    header.page-head {
+        padding: 34px 0 18px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .badge {
+        display: inline-block;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        color: var(--gold);
+        border: 1px solid currentColor;
+        border-radius: 999px;
+        padding: 2px 12px;
+        margin-bottom: 14px;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: clamp(24px, 4.4vw, 34px);
+        line-height: 1.35;
+        margin: 0 0 6px;
+        letter-spacing: 0.01em;
+    }
+
+    .subtitle { color: var(--ink-soft); font-size: 15px; margin: 0 0 14px; }
+
+    .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        font-size: 13.5px;
+        color: var(--ink-soft);
+    }
+
+    .lang-switch {
+        margin-top: 18px;
+        display: inline-flex;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 3px;
+        box-shadow: var(--shadow);
+    }
+
+    .lang-switch button {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: var(--ink-soft);
+        font: inherit;
+        font-size: 13.5px;
+        padding: 6px 16px;
+        border-radius: 999px;
+        cursor: pointer;
+        transition: background-color 0.18s, color 0.18s;
+    }
+
+    .lang-switch button[aria-pressed="true"] {
+        background: var(--accent);
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .summary {
+        margin: 26px 0 6px;
+        padding: 20px 22px;
+        background: var(--accent-soft);
+        border-left: 4px solid var(--accent);
+        border-radius: 8px;
+        font-size: 15.5px;
+    }
+
+    .summary strong { display: block; margin-bottom: 8px; font-size: 16px; }
+    .summary ul { margin: 6px 0 0 20px; padding: 0; }
+    .summary li { margin: 5px 0; }
+
+    nav.toc {
+        margin: 24px 0 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav.toc a {
+        font-size: 13.5px;
+        color: var(--ink-soft);
+        text-decoration: none;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 13px;
+        transition: color 0.18s, border-color 0.18s;
+    }
+
+    nav.toc a:hover { color: var(--accent); border-color: var(--accent); }
+
+    section {
+        margin-top: 30px;
+        padding-top: 4px;
+    }
+
+    h2 {
+        font-size: 19px;
+        margin: 0 0 12px;
+        padding-left: 12px;
+        border-left: 4px solid var(--accent);
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin: 20px 0 8px;
+        color: var(--ink);
+    }
+
+    p { margin: 10px 0; }
+
+    ul, ol { margin: 10px 0 10px 22px; padding: 0; }
+    li { margin: 6px 0; }
+
+    .table-scroll { overflow-x: auto; margin: 14px 0; }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14.5px;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        min-width: 560px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 11px 13px;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+    }
+
+    th {
+        background: var(--accent-soft);
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .note {
+        color: var(--ink-soft);
+        font-size: 14px;
+    }
+
+    .card {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 18px 20px;
+        margin: 16px 0;
+        box-shadow: var(--shadow);
+    }
+
+    .card h3 { margin-top: 0; }
+
+    a { color: var(--accent); }
+
+    footer {
+        margin-top: 44px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        color: var(--ink-soft);
+        font-size: 13.5px;
+        line-height: 1.9;
+    }
+
+    footer p { margin: 4px 0; }
+
+    [hidden] { display: none !important; }
+
+    @media (max-width: 520px) {
+        body { font-size: 15.5px; padding: 0 14px 44px; }
+        th, td { padding: 9px 11px; }
+        .summary { padding: 16px 16px; }
+    }
+
+    @media print {
+        body { background: #fff; color: #000; }
+        .lang-switch, nav.toc { display: none; }
+        section { break-inside: avoid; }
+    }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="page-head">
+    <div class="badge">隐私政策 · Privacy Policy</div>
+    <h1 data-cn="《锄大地背唐诗》隐私政策" data-en="Privacy Policy of &quot;Card Game with Tang Poetry&quot;">《锄大地背唐诗》隐私政策</h1>
+    <p class="subtitle" data-cn="一款完全离线运行、不收集任何个人信息的扑克牌诗词游戏"
+       data-en="An offline card-and-poetry game that collects no personal information">一款完全离线运行、不收集任何个人信息的扑克牌诗词游戏</p>
+    <div class="meta-row">
+        <span data-cn="生效日期：2026 年 11 月 15 日" data-en="Effective date: November 15, 2026">生效日期：2026 年 11 月 15 日</span>
+        <span data-cn="最后更新：2026 年 11 月 15 日" data-en="Last updated: November 15, 2026">最后更新：2026 年 11 月 15 日</span>
+        <span data-cn="适用版本：3.3.2 及以后" data-en="Applies to version 3.3.2 and later">适用版本：3.3.2 及以后</span>
+    </div>
+    <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" id="btn-cn" aria-pressed="true">中文</button>
+        <button type="button" id="btn-en" aria-pressed="false">English</button>
+    </div>
+</header>
+
+<div id="lang-cn">
+<div class="summary">
+    <strong>核心说明（一句话概括）</strong>
+    <ul>
+        <li>本游戏不联网、无账号体系，<b>不收集、不上传、不出售任何个人信息</b>。</li>
+        <li>游戏进度、设置与玩家名称等数据<b>仅保存在您的设备本地</b>，卸载或清除应用数据即彻底删除。</li>
+        <li>本游戏<b>不申请任何设备权限</b>（无摄像头、麦克风、定位、通讯录、存储、网络权限）。</li>
+        <li>本游戏<b>不集成第三方广告、统计分析或崩溃上报 SDK</b>。</li>
+    </ul>
+</div>
+
+<nav class="toc">
+    <a href="#s1">一、适用范围</a>
+    <a href="#s2">二、我们不收集的信息</a>
+    <a href="#s3">三、仅存于本地的数据</a>
+    <a href="#s4">四、设备权限</a>
+    <a href="#s5">五、第三方服务</a>
+    <a href="#s6">六、共享与披露</a>
+    <a href="#s7">七、保存与删除</a>
+    <a href="#s8">八、数据安全</a>
+    <a href="#s9">九、未成年人保护</a>
+    <a href="#s10">十、您的权利</a>
+    <a href="#s11">十一、政策变更</a>
+    <a href="#s12">十二、联系我们</a>
+</nav>
+
+<section id="s1">
+    <h2>一、适用范围</h2>
+    <p>本隐私政策适用于移动应用「锄大地背唐诗」（英文名 Card Game with Tang Poetry，以下简称「本游戏」），说明我们在您使用本游戏时如何处理与您相关的信息。</p>
+    <p>本游戏的内容（游戏画面、诗词文本、音效等）以本地资源形式打包在应用内，运行于设备本地的网页视图（WebView）中，<b>不需要连接互联网即可完整游玩</b>。</p>
+</section>
+
+<section id="s2">
+    <h2>二、我们不收集的信息</h2>
+    <p>本游戏是单机离线游戏，没有注册或登录流程，因此我们不会收集、传输或存储以下任何信息：</p>
+    <ul>
+        <li>姓名、手机号码、电子邮箱、住址等身份信息；</li>
+        <li>位置信息（GPS 或网络定位）；</li>
+        <li>通讯录、短信、通话记录、日历；</li>
+        <li>照片、视频、麦克风录音、摄像头画面；</li>
+        <li>设备唯一标识符（IMEI、Android ID、广告 ID 等）；</li>
+        <li>账号凭据、支付信息；</li>
+        <li>游戏内的操作行为日志、崩溃日志或使用统计。</li>
+    </ul>
+    <p class="note">说明：本游戏未声明网络访问权限，应用本身无法主动与任何服务器通信。</p>
+</section>
+
+<section id="s3">
+    <h2>三、仅保存在您设备本地的数据</h2>
+    <p>为了记住您的偏好与进度，本游戏会在设备本地的应用私有存储中保存少量数据（网页本地存储 localStorage / 应用私有目录）。这些数据<b>始终留在您的设备内，不会上传到任何服务器，我们无法访问</b>。</p>
+    <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>数据类别</th>
+                    <th>具体内容</th>
+                    <th>用途</th>
+                    <th>是否上传</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>玩家名称</td>
+                    <td>您在游戏中为四个方位输入的昵称（默认为「北、东、南、西」）</td>
+                    <td>仅在牌桌上显示</td>
+                    <td>否</td>
+                </tr>
+                <tr>
+                    <td>游戏设置</td>
+                    <td>游戏节奏、桌面颜色、AI 难度、牌面数字/花色大小、牌背颜色、音效与音乐开关、音量</td>
+                    <td>保存偏好，下次打开时沿用</td>
+                    <td>否</td>
+                </tr>
+                <tr>
+                    <td>成绩与金币</td>
+                    <td>本局/累计分数、金币数量、成就进度</td>
+                    <td>游戏内展示与结算</td>
+                    <td>否</td>
+                </tr>
+                <tr>
+                    <td>游玩时长</td>
+                    <td>当日累计游戏时长、日期标记</td>
+                    <td>游戏内提示，便于自我管理</td>
+                    <td>否</td>
+                </tr>
+                <tr>
+                    <td>语言偏好</td>
+                    <td>简体/繁体、中文/英文的显示选择</td>
+                    <td>记住界面语言</td>
+                    <td>否</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>上述数据不含任何可直接识别您身份的信息。玩家名称由您自行填写，请勿填写真实姓名、电话等敏感信息。</p>
+</section>
+
+<section id="s4">
+    <h2>四、设备权限</h2>
+    <p>本游戏在应用清单中<b>未声明、也不申请任何系统权限</b>，包括但不限于：网络、存储、相机、麦克风、位置、通讯录、电话、短信、通知。</p>
+    <p>因此，本游戏既不会读取您设备上的文件，也无法访问您设备外的任何内容。</p>
+</section>
+
+<section id="s5">
+    <h2>五、第三方服务与 SDK</h2>
+    <p>本游戏<b>不集成任何第三方服务、广告平台、统计分析工具或崩溃上报 SDK</b>，也没有社交分享、账号登录、云存档等功能。</p>
+    <p class="note">关于应用分发平台：当您通过 Google Play 等应用商店下载、更新本游戏时，该商店平台可能会依据其自身的隐私政策收集安装统计、崩溃报告、评价等信息。这些行为由平台独立实施，不属于本游戏的行为，也不受本政策约束，建议您查阅相应平台的政策。</p>
+</section>
+
+<section id="s6">
+    <h2>六、信息的共享、转让与公开披露</h2>
+    <p>由于我们不收集、也不持有您的个人信息，因此：</p>
+    <ul>
+        <li>我们<b>不会</b>向任何第三方共享、出售、出租或交易您的信息；</li>
+        <li>我们<b>不会</b>因商业目的转让您的信息；</li>
+        <li>我们<b>不会</b>公开披露您的信息；</li>
+        <li>不存在跨境传输个人信息的情形。</li>
+    </ul>
+</section>
+
+<section id="s7">
+    <h2>七、数据的保存与删除</h2>
+    <h3>7.1 保存位置与期限</h3>
+    <p>所有游戏数据保存在您设备的应用私有存储中，保存期限为「直到您主动删除」。我们不设远程备份，也没有云端副本。</p>
+    <h3>7.2 如何删除</h3>
+    <p>您可以随时通过以下任一方式彻底删除本游戏保存的全部数据：</p>
+    <ul>
+        <li>在系统设置中清除本应用的「存储/数据」（清除数据）；</li>
+        <li>卸载本游戏（卸载会一并删除应用私有目录内的全部数据）；</li>
+        <li>在游戏内修改玩家名称、设置等，直接覆盖原有内容。</li>
+    </ul>
+    <p>删除后不可恢复，且无需向我们提出申请——因为数据从未离开您的设备，我们技术上也无法代为删除。</p>
+</section>
+
+<section id="s8">
+    <h2>八、数据安全</h2>
+    <p>本游戏运行在系统分配给应用的沙箱内，其他应用无法读取本游戏的私有数据；由于不联网，数据也不存在传输环节被截获的风险。</p>
+    <p>尽管如此，任何本地存储都无法保证绝对安全（例如设备被解锁、被 root 或系统被入侵）。请您妥善保管设备与锁屏密码。若您更换或出售设备，建议先卸载本游戏或清除应用数据。</p>
+</section>
+
+<section id="s9">
+    <h2>九、未成年人保护</h2>
+    <p>本游戏适合所有年龄段用户，内容为中国传统扑克牌玩法与古诗词，不含暴力、恐怖、成人或付费抽奖内容。</p>
+    <p>由于本游戏不收集任何个人信息，因此不会有意收集 13 周岁以下儿童（或您所在司法辖区规定的相应年龄）的个人信息。若您是家长或监护人，认为孩子在游戏中填写了敏感个人信息（如真实姓名），可在设备上清除应用数据或卸载游戏，并可随时联系我们协助说明。</p>
+</section>
+
+<section id="s10">
+    <h2>十、您的权利</h2>
+    <p>依据适用的个人信息保护法规（如《中华人民共和国个人信息保护法》、GDPR 等），您享有知情、决定、查阅、复制、更正、删除其个人信息的权利。就本游戏而言：</p>
+    <ul>
+        <li><b>查阅/更正</b>：游戏内「修改名称」与「设置」可直接查看和更改本地保存的内容；</li>
+        <li><b>删除</b>：清除应用数据或卸载应用即可删除全部本地数据；</li>
+        <li><b>撤回同意</b>：本游戏不存在需要征得同意的信息收集行为，无需撤回；关闭音效/音乐等开关即可随时生效；</li>
+        <li><b>投诉</b>：您可向所在地区的个人信息保护监管机构投诉，也可先联系我们先协商解决。</li>
+    </ul>
+    <p>我们不会因您行使上述权利而对您进行任何形式的歧视或限制游戏功能。</p>
+</section>
+
+<section id="s11">
+    <h2>十一、本政策的变更</h2>
+    <p>若本游戏的功能发生变化（例如将来新增联网、账号或统计功能），我们会在本页面更新本政策，并在页面顶部标注新的「最后更新」日期。</p>
+    <p>若变更涉及您权利的重大调整，我们会在应用内以显著方式提示，或在应用商店的版本说明中告知。建议您定期查阅本页面。</p>
+</section>
+
+<section id="s12">
+    <h2>十二、联系我们</h2>
+    <div class="card">
+        <h3>开发者联系方式</h3>
+        <p>如您对本隐私政策有任何疑问、意见或投诉，请通过以下方式联系我们：</p>
+        <p>电子邮箱：<b>battery360@163.com</b></p>
+        <p class="note">我们会在收到邮件后的 15 个工作日内回复。为保护您的权益，请勿在邮件中附带身份证件、密码等敏感信息。</p>
+    </div>
+    <p>若您对我们的回复不满意，特别是认为我们的个人信息处理行为损害了您的合法权益，您还可以向网信、电信、公安及市场监管等主管部门反映。</p>
+</section>
+</div>
+
+<div id="lang-en" hidden>
+<div class="summary">
+    <strong>In short</strong>
+    <ul>
+        <li>This game works fully offline and has no account system. It <b>does not collect, upload, or sell any personal information</b>.</li>
+        <li>Game progress, settings, and player names are <b>stored only on your device</b>, and are erased by clearing app data or uninstalling.</li>
+        <li>The game <b>requests no device permissions</b> — no internet, storage, camera, microphone, location, or contacts.</li>
+        <li>The game <b>bundles no third-party ads, analytics, or crash-reporting SDKs</b>.</li>
+    </ul>
+</div>
+
+<nav class="toc">
+    <a href="#e1">1. Scope</a>
+    <a href="#e2">2. What We Do Not Collect</a>
+    <a href="#e3">3. Local-Only Data</a>
+    <a href="#e4">4. Permissions</a>
+    <a href="#e5">5. Third-Party Services</a>
+    <a href="#e6">6. Sharing</a>
+    <a href="#e7">7. Retention &amp; Deletion</a>
+    <a href="#e8">8. Security</a>
+    <a href="#e9">9. Children</a>
+    <a href="#e10">10. Your Rights</a>
+    <a href="#e11">11. Changes</a>
+    <a href="#e12">12. Contact</a>
+</nav>
+
+<section id="e1">
+    <h2>1. Scope</h2>
+    <p>This Privacy Policy applies to the mobile application “Card Game with Tang Poetry” (Chinese name 「锄大地背唐诗」, hereinafter “the Game”) and explains how information related to you is handled when you use the Game.</p>
+    <p>All content of the Game — game screens, poetry texts, and audio — is packaged as local assets and runs in a device-local WebView. <b>The Game is fully playable without any internet connection.</b></p>
+</section>
+
+<section id="e2">
+    <h2>2. What We Do Not Collect</h2>
+    <p>The Game is a standalone offline game with no registration or sign-in, so we do not collect, transmit, or store any of the following:</p>
+    <ul>
+        <li>Identity information such as name, phone number, email address, or postal address;</li>
+        <li>Location data (GPS or network-based);</li>
+        <li>Contacts, SMS, call logs, or calendar;</li>
+        <li>Photos, videos, microphone recordings, or camera images;</li>
+        <li>Device identifiers (IMEI, Android ID, advertising ID, etc.);</li>
+        <li>Account credentials or payment information;</li>
+        <li>In-game behavioral logs, crash logs, or usage statistics.</li>
+    </ul>
+    <p class="note">Note: the Game declares no internet permission, so the app itself cannot communicate with any server.</p>
+</section>
+
+<section id="e3">
+    <h2>3. Local-Only Data</h2>
+    <p>To remember your preferences and progress, the Game stores a small amount of data in the app’s private storage on your device (browser localStorage / app-private directory). This data <b>never leaves your device, is never uploaded to any server, and is inaccessible to us</b>.</p>
+    <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Content</th>
+                    <th>Purpose</th>
+                    <th>Uploaded</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Player names</td>
+                    <td>Nicknames you type for the four seats (defaults: North, East, South, West)</td>
+                    <td>Displayed on the table only</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Settings</td>
+                    <td>Game speed, table color, AI difficulty, card number/suit size, card-back color, sound and music toggles, volume</td>
+                    <td>Restore your preferences</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Scores &amp; coins</td>
+                    <td>Round/total scores, coin balance, achievement progress</td>
+                    <td>In-game display and settlement</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Play time</td>
+                    <td>Daily accumulated play time and a date marker</td>
+                    <td>In-game self-management hint</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>Simplified/Traditional Chinese and Chinese/English display choice</td>
+                    <td>Remember interface language</td>
+                    <td>No</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>None of the above contains information that directly identifies you. Player names are entered by you — please do not enter your real name, phone number, or other sensitive details.</p>
+</section>
+
+<section id="e4">
+    <h2>4. Device Permissions</h2>
+    <p>The Game <b>declares and requests no system permissions</b>, including but not limited to internet, storage, camera, microphone, location, contacts, phone, SMS, or notifications.</p>
+    <p>Consequently, the Game cannot read files on your device or access anything outside of it.</p>
+</section>
+
+<section id="e5">
+    <h2>5. Third-Party Services and SDKs</h2>
+    <p>The Game <b>integrates no third-party services, advertising networks, analytics tools, or crash-reporting SDKs</b>, and offers no social sharing, account login, or cloud saves.</p>
+    <p class="note">App stores: when you download or update the Game through Google Play or another store, that platform may collect install statistics, crash reports, and reviews under its own privacy policy. Such processing is performed independently by the platform, is outside the Game’s behavior, and is not governed by this Policy.</p>
+</section>
+
+<section id="e6">
+    <h2>6. Sharing, Transfer, and Disclosure</h2>
+    <p>Because we do not collect or hold your personal information:</p>
+    <ul>
+        <li>We <b>do not</b> share, sell, rent, or trade your information with any third party;</li>
+        <li>We <b>do not</b> transfer your information for commercial purposes;</li>
+        <li>We <b>do not</b> publicly disclose your information;</li>
+        <li>No cross-border transfer of personal information occurs.</li>
+    </ul>
+</section>
+
+<section id="e7">
+    <h2>7. Retention and Deletion</h2>
+    <h3>7.1 Where and for how long</h3>
+    <p>All game data is stored in the app’s private storage on your device and is retained “until you delete it”. We keep no remote backup and no cloud copy.</p>
+    <h3>7.2 How to delete</h3>
+    <p>You may permanently delete all data saved by the Game at any time by:</p>
+    <ul>
+        <li>clearing the app’s storage/data in system settings;</li>
+        <li>uninstalling the Game (this removes all data in the app-private directory);</li>
+        <li>overwriting it in-game (e.g., editing player names or settings).</li>
+    </ul>
+    <p>Deletion is irreversible and no request to us is required — the data never left your device, and we technically cannot delete it on your behalf.</p>
+</section>
+
+<section id="e8">
+    <h2>8. Security</h2>
+    <p>The Game runs inside the app sandbox assigned by the operating system, so other apps cannot read its private data; because it is offline, data is not exposed to interception during transmission.</p>
+    <p>Nevertheless, no local storage is absolutely secure (e.g., if the device is unlocked, rooted, or compromised). Please keep your device and screen lock safe. Before giving away or selling a device, uninstall the Game or clear its data.</p>
+</section>
+
+<section id="e9">
+    <h2>9. Children’s Privacy</h2>
+    <p>The Game is suitable for users of all ages. Its content is a traditional Chinese card game plus classical poetry, with no violence, horror, adult content, or paid loot boxes.</p>
+    <p>Because the Game collects no personal information, it does not knowingly collect personal information from children under 13 (or the applicable age in your jurisdiction). If you are a parent or guardian and believe your child entered sensitive personal information (such as a real name), you can clear app data or uninstall the Game, and contact us for guidance at any time.</p>
+</section>
+
+<section id="e10">
+    <h2>10. Your Rights</h2>
+    <p>Under applicable data-protection laws (e.g., the GDPR and China’s Personal Information Protection Law), you have rights to be informed, to decide, to access, to copy, to rectify, and to delete your personal information. For the Game:</p>
+    <ul>
+        <li><b>Access / rectification</b>: use “Edit Names” and “Settings” in the Game to view and change locally stored content;</li>
+        <li><b>Deletion</b>: clear app data or uninstall the Game to remove all local data;</li>
+        <li><b>Withdrawing consent</b>: the Game performs no consent-based collection; toggles such as sound and music take effect immediately;</li>
+        <li><b>Complaints</b>: you may lodge a complaint with your local data-protection authority, or contact us first to resolve the matter.</li>
+    </ul>
+    <p>We will not discriminate against you or restrict game features in any way for exercising these rights.</p>
+</section>
+
+<section id="e11">
+    <h2>11. Changes to This Policy</h2>
+    <p>If the Game’s functionality changes (for example, if internet access, accounts, or analytics are added in the future), we will update this Policy on this page and mark the new “Last updated” date at the top.</p>
+    <p>For material changes affecting your rights, we will highlight them in the app or describe them in the store release notes. Please review this page periodically.</p>
+</section>
+
+<section id="e12">
+    <h2>12. Contact Us</h2>
+    <div class="card">
+        <h3>Developer contact</h3>
+        <p>For any question, comment, or complaint about this Privacy Policy, please contact us:</p>
+        <p>Email: <b>battery360@163.com</b></p>
+        <p class="note">We reply within 15 business days of receiving your email. To protect your privacy, please do not include ID documents, passwords, or other sensitive information in your message.</p>
+    </div>
+</section>
+</div>
+
+<footer>
+    <p id="footer-cn">「锄大地背唐诗」· 本页面为《隐私政策》的公开版本，可直接用于应用商店的隐私政策链接。</p>
+    <p id="footer-en" hidden>“Card Game with Tang Poetry” · This page is the public version of the Privacy Policy, suitable for use as the store listing’s privacy-policy link.</p>
+    <p id="footer-meta">Last updated 2026-11-15 · 适用于 Android 3.3.2 及以后版本</p>
+</footer>
+
+</div>
+
+<script>
+    (function () {
+        var LANGS = {
+            cn: { html: 'lang-cn', btn: 'btn-cn', other: 'btn-en', footerShow: 'footer-cn', footerHide: 'footer-en' },
+            en: { html: 'lang-en', btn: 'btn-en', other: 'btn-cn', footerShow: 'footer-en', footerHide: 'footer-cn' }
+        };
+
+        function apply(lang) {
+            var cur = LANGS[lang] || LANGS.cn;
+            var other = LANGS[lang === 'en' ? 'cn' : 'en'];
+
+            document.getElementById(cur.html).hidden = false;
+            document.getElementById(other.html).hidden = true;
+            document.getElementById('footer-meta').hidden = false;
+
+            // 页脚双语互斥
+            document.getElementById('footer-cn').hidden = lang === 'en';
+            document.getElementById('footer-en').hidden = lang !== 'en';
+
+            document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
+
+            document.getElementById('btn-cn').setAttribute('aria-pressed', lang === 'cn' ? 'true' : 'false');
+            document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+
+            // 标题与副标题按 data-* 同步
+            var h1 = document.querySelector('h1');
+            var sub = document.querySelector('.subtitle');
+            if (h1 && h1.dataset[lang === 'en' ? 'en' : 'cn']) h1.textContent = h1.dataset[lang === 'en' ? 'en' : 'cn'];
+            if (sub && sub.dataset[lang === 'en' ? 'en' : 'cn']) sub.textContent = sub.dataset[lang === 'en' ? 'en' : 'cn'];
+
+            // 元信息（生效/更新/版本）同步
+            document.querySelectorAll('.meta-row span').forEach(function (el) {
+                var key = lang === 'en' ? 'en' : 'cn';
+                if (el.dataset[key]) el.textContent = el.dataset[key];
+            });
+
+            try { localStorage.setItem('privacyLang', lang); } catch (e) {}
+        }
+
+        document.getElementById('btn-cn').addEventListener('click', function () { apply('cn'); });
+        document.getElementById('btn-en').addEventListener('click', function () { apply('en'); });
+
+        // 首次访问：URL 片段 #en 或浏览器语言为英文时显示英文
+        var initial = 'cn';
+        try {
+            var saved = localStorage.getItem('privacyLang');
+            if (saved === 'en' || saved === 'cn') initial = saved;
+            else if ((document.documentElement.lang || '').indexOf('en') === 0) initial = 'en';
+        } catch (e) {}
+        if (location.hash === '#en') initial = 'en';
+        apply(initial);
+    })();
+</script>
+</body>
+</html>
